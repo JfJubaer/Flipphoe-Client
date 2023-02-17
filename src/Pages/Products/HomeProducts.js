@@ -10,7 +10,7 @@ const HomeProducts = () => {
     const { data: products = [] } = useQuery({
         queryKey: ["products123"],
         queryFn: () =>
-            fetch("http://localhost:5000/products").then((res) => res.json()),
+            fetch("https://server-jfjubaer.vercel.app/products").then((res) => res.json()),
     });
     const [p, setP] = useState({});
     const { user } = useContext(AuthContext);

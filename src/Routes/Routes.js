@@ -62,13 +62,13 @@ export const router = createBrowserRouter([
         path: "/cat/:id",
         element: <PrivateRoute><CatProducts></CatProducts></PrivateRoute>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(`https://server-jfjubaer.vercel.app/products/${params.id}`),
       },
       {
         path: "/orders/:id",
         element: <PrivateRoute><MyOrders></MyOrders></PrivateRoute>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/orders/${params.id}`),
+          fetch(`https://server-jfjubaer.vercel.app/orders/${params.id}`),
       },
     ],
   },

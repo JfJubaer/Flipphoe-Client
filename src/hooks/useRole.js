@@ -5,7 +5,7 @@ const useRole = (email) => {
 
   useEffect(() => {
     if (email) {
-      fetch(`http://localhost:5000/role/${email}`)
+      fetch(`https://server-jfjubaer.vercel.app/role/${email}`)
         .then((res) => res.json())
         .then((data) => { setRole(data.role); });
     }

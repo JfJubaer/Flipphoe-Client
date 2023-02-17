@@ -32,7 +32,7 @@ const AddProducts = () => {
       email: user.email
     };
     console.log(product);
-    fetch("http://localhost:5000/addproduct", {
+    fetch("https://server-jfjubaer.vercel.app/addproduct", {
       method: "post",
       headers: {
         "content-type": "application/json",

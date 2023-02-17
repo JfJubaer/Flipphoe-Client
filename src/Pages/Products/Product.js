@@ -45,7 +45,7 @@ const Product = ({ p, setP }) => {
           <div className="card-actions justify-end">
             {role === 'buyer' ? <label onClick={handleP} htmlFor="booking-modal" className="btn btn-primary">
               Book Now
-            </label> : <p className="text-red-600">Please login to buy</p>}
+            </label> : <p className="text-red-600">Please login "buyer" to buy</p>}
           </div>
         </div>
       </div>

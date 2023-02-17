@@ -16,7 +16,7 @@ const CheckoutForm = ({ total }) => {
 
     useEffect(() => {
         // Create PaymentIntent as soon as the page loads
-        fetch("http://localhost:5000/payment", {
+        fetch("https://server-jfjubaer.vercel.app/payment", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ total }),
@@ -73,7 +73,7 @@ const CheckoutForm = ({ total }) => {
                 transactionId: paymentIntent.id,
                 email: user.email,
             }
-            fetch('http://localhost:5000/payment-done', {
+            fetch('https://server-jfjubaer.vercel.app/payment-done', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',

@@ -25,7 +25,7 @@ const SignUp = () => {
     };
     const user = { email, name, role };
     console.log("user", user);
-    fetch("http://localhost:5000/login", {
+    fetch("https://server-jfjubaer.vercel.app/login", {
       method: "post",
       headers: {
         "content-type": "application/json",
