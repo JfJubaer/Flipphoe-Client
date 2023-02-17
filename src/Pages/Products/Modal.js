@@ -22,7 +22,7 @@ const Modal = ({ p }) => {
       price:
         resalePrice * 1
     }
-    fetch('https://server-jfjubaer.vercel.app/orders', {
+    fetch('http://localhost:5000/orders', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

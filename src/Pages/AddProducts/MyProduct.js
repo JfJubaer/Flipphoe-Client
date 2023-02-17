@@ -15,7 +15,7 @@ const MyProduct = ({ p }) => {
         _id
     } = p;
     const handleDelete = (id) => {
-        fetch(`https://server-jfjubaer.vercel.app/myproducts/${id}`, {
+        fetch(`http://localhost:5000/myproducts/${id}`, {
             method: 'delete'
         })
             .then(res => res.json())

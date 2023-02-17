@@ -7,7 +7,7 @@ const Cat = () => {
     const { user } = useContext(AuthContext);
     const { data: categories = [] } = useQuery({
         queryKey: ['categories'],
-        queryFn: () => fetch('https://server-jfjubaer.vercel.app/categories').then(res => res.json())
+        queryFn: () => fetch('http://localhost:5000/categories').then(res => res.json())
 
     })
 

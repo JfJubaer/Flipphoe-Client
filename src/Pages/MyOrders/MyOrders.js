@@ -15,7 +15,7 @@ const MyOrders = () => {
   const prices = data.map(i => i.price);
   const total = prices.reduce(function (a, b) { return a + b; }, 0);
   const handleDelete = (id) => {
-    fetch(`https://server-jfjubaer.vercel.app/orders/${id}`, {
+    fetch(`http://localhost:5000/orders/${id}`, {
       method: 'delete'
     })
       .then(res => res.json())

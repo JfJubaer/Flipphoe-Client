@@ -14,7 +14,7 @@ const Products = () => {
   const { data: products = [] } = useQuery({
     queryKey: ["products123"],
     queryFn: () =>
-      fetch("https://server-jfjubaer.vercel.app/products").then((res) => res.json()),
+      fetch("http://localhost:5000/products").then((res) => res.json()),
   });
   return (
     <div className="lg:container mx-auto">

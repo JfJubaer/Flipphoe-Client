@@ -7,13 +7,13 @@ const Admin = () => {
     const { data: buyers = [] } = useQuery({
         queryKey: ["buyer"],
         queryFn: () =>
-            fetch("https://server-jfjubaer.vercel.app/buyer").then((res) => res.json()),
+            fetch("http://localhost:5000/buyer").then((res) => res.json()),
     });
 
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to cancel this order');
         if (proceed) {
-            fetch(`https://server-jfjubaer.vercel.app/buyer/${id}`, {
+            fetch(`http://localhost:5000/buyer/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
