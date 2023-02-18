@@ -1,3 +1,23 @@
+FLIPPHOE – USED DEVICE SELLING PLATFORM
+
+key features : 
+
+•	buy and sell devices through this site at 24/7
+
+•	buyer, seller and admin role
+
+•	A good environment for online marketing
+
+•	Payment
+
+Technologies :
+React, Mongo, Node JS, Express, Tailwind, Firebase, VS code, Github, Vercel, Firebase, Stripe
+
+live site : 
+https://flipphoe-8704e.web.app/
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
